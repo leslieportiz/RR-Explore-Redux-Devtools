@@ -20,12 +20,12 @@ export const todoSlice = createSlice({
                 return { items: array }
             }
         },
-        clearTodo: () => {
+        clearTodos: () => {
             return { items: [] }
         }
     }
 })
 
-export const { addTodo, removeOne, clearTodo } = todoSlice.actions
+export const { addTodo, removeOne, clearTodos } = todoSlice.actions
 
 export default todoSlice.reducer
